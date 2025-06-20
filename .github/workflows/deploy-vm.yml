@@ -1,0 +1,19 @@
+name: Deploy
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Crear archivo remoto
+        run: ssh -o StrictHostKeyChecking=no omarisraelmartinezsilva@${{ secrets.VM_IP }} "touch hola.txt"
