@@ -16,4 +16,4 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_KEY }}
 
       - name: Crear archivo remoto
-        run: ssh -o StrictHostKeyChecking=no omarisraelmartinezsilva@${{ secrets.VM_IP }} "touch hello.txt"
+        run: ssh -o StrictHostKeyChecking=no omarisraelmartinezsilva@${{ secrets.VM_IP }} "touch ho.txt"
