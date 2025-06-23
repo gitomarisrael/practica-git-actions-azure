@@ -10,6 +10,6 @@ ssh -o StrictHostKeyChecking=no omarisraelmartinezsilva@34.173.95.68 <<HTML
 
     cd $DEPLOY_PATH
 
-    git pull --rebase origin $BRANCHX
+    git pull --rebase origin $BRANCH
 
 HTML
