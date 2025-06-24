@@ -1,10 +1,6 @@
-name: Deploy
+name: Deploy-VM
 
-on: 
-  push:
-    branches:
-      - main
-      - stage
+on: workflow_dispatch
 
 jobs:
   build:
