@@ -1,4 +1,4 @@
-BRANCH=?1
+BRANCH=$1
 
 if [ "$BRANCH" == "main"]; then 
     DEPLOY_PATH="/home/omarisraelmartinezsilva/practica-git-actions-azure"
