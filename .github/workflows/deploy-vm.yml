@@ -23,6 +23,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/stage' }}
         run: bash deploy.sh stage
 
-      - name: Deploy to prod server
+      - name: Deploy to production server
         if: ${{ github.ref == 'refs/heads/main' }}
         run: bash deploy.sh main
