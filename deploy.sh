@@ -7,7 +7,7 @@ else
 fi
 
 
-ssh -o StrictHostKeyChecking=no omarisraelmartinezsilva@34.171.144.130 <<HTML
+ssh -o StrictHostKeyChecking=no omarisraelmartinezsilva@35.239.189.37 <<HTML
 
     cd $DEPLOY_PATH
 
